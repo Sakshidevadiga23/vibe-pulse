@@ -1,0 +1,114 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0c013e;
+  color: azure;
+}
+
+html {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Navbar Styling */
+header {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content Styling */
+.main-content {
+  padding: 10vw;
+}
+
+.author-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 10vw;
+  font-size: 1.4vw;
+}
+.singer-profile {
+  font-family: monospace;
+  line-height: 1.4;
+}
+
+.author-image img {
+  width: 440px;
+  height: 450px;
+  border-radius: 6%;
+  box-shadow: 8px 7px 27px 0px blue;
+  border: 1px solid blue;
+}
+
+.author-content {
+  flex: 1;
+  margin-left: 20px;
+}
+
+/* Reverse the layout for alternating authors */
+.author-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.author-section.reverse .author-content {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .author-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .author-section.reverse {
+    flex-direction: column;
+  }
+
+  .author-content {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 15px;
+  }
+}
+
+.icon a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 2vw;
+  padding: 10px;
+}
+.bio {
+  text-align: justify;
+}
