@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe PULSE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="./shetty/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<style>
+
+</style>
+
+<body>
+    <nav>
+        <ul class="sidebar" aria-label="Main Navigation">
+            <li onclick=hideSidebar()>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                    </svg>
+                </a>
+            </li>
+            <li><a href="./About Us/index.html">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="./shetty/index.html">Music</a></li>
+            <li><a href="#popular-artist">Artists</a></li>
+            <li><a href="#podcast">Podcasts</a></li>
+            <li><a href="./register/register.html">Register</a></li>
+        </ul>
+        <ul aria-label="Primary Navigation">
+            <li><img data-aos="zoom-in" data-aos-duration="3000" src="./Figma Elements/logo.png" class="logo"
+                    alt="Logo"></li>
+            <li data-aos="fade-down" data-aos-duration="2000" class="hideOnMobile" aria-label="About Us"><a
+                    href="./About Us/index.html">About Us</a></li>
+            <li data-aos="fade-down" data-aos-duration="2000" class="hideOnMobile" aria-label="Contact"><a
+                    href="#contact">Contact</a></li>
+            <li data-aos="fade-down" data-aos-duration="2000" class="hideOnMobile" aria-label="Music"><a
+                    href="./shetty/index.html">Music</a></li>
+            <li data-aos="fade-down" data-aos-duration="2000" class="hideOnMobile" aria-label="Artists"><a
+                    href="#popular-artist">Artists</a></li>
+            <li data-aos="fade-down" data-aos-duration="2000" class="hideOnMobile" aria-label="Podcasts"><a
+                    href="#podcast">
+                    <img src="./Figma Elements/microphone.png" width="25" alt="icon">
+                    Podcasts</a></li>
+            <li></li>
+            <li data-aos="fade-down" data-aos-duration="2000" class="hideOnMobile search"><a
+                    href="./register/register.html">Register</a></li>
+            <li class="menu-button" onclick=toggleSidebar()><a href="#">
+                    <img src="./Figma Elements/menu.png" alt="" width="40">
+                    <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                    </svg>
+                </a></li>
+        </ul>
+    </nav>
+    <p class="title" data-aos="zoom-in" data-aos-duration="2000">Discover the Soundtrack to Your Life</p>
+    <p class="subtitle" data-aos="zoom-in" data-aos-duration="2000">Elevate your mood and energize your spirit with our
+        uplifting melodies that speak directly to
+        your heart.</p>
+    <a href="./shetty/singerBio.html">
+        <div class="description">
+            <div>
+                <p class="numbers">5,000+</p>
+                <p class="list">Playlists</p>
+            </div>
+            <div>
+                <p class="numbers">20K+</p>
+                <p class="list">Songs</p>
+            </div>
+            <div>
+                <p class="numbers">10K+</p>
+                <p class="list">Podcasts</p>
+            </div>
+        </div>
+    </a>
+
+
+    <div class="activeusers">
+        <img src="./Figma Elements/users.png" alt="Active Users">
+        <p>30K + <br> Active Users</p>
+    </div>
+
+    <div class="midlogo">
+        <img src="./Figma Elements/logo.png" alt="Logo">
+    </div>
+    <a href="./shetty/singerBio.html">
+        <div class="glassBox">
+            <img src="./Figma Elements/Anriudh.png" alt="Anriudh">
+        </div>
+    </a>
+    <img src="./Figma Elements/Ellipse.png" class="Ellipse" alt="Ellipse">
+    <img src="./Figma Elements/Ellipse.png" class="Ellipse2" alt="Ellipse">
+    <img src="./Figma Elements/Ellipse2.png" class="Ellipse3" alt="Ellipse">
+
+    <div class="logos">
+        <div class="logos-slide">
+            <span class="iconscroll-text"> Podcasts <i class="iciconscrollon"></i></span>
+            <span class="iconscroll-text"> Playlists <i class="iconscroll"></i></span>
+            <span class="iconscroll-text"> Streams <i class="iconscroll"></i></span>
+            <span class="iconscroll-text"> Latest Trends <i class="iconscroll"></i></span>
+            <span class="iconscroll-text"> Artist <i class="iconscroll"></i></span>
+            <span class="iconscroll-text"> New Releases <i class="iconscroll"></i></span>
+        </div>
+        <div class="logos-slide">
+            <span class="iconscroll-text"> Podcasts <i class="iconscroll"></i></span>
+            <span class="iconscroll-text"> Playlists <i class="iconscroll"></i></span>
+            <span class="iconscroll-text"> Streams <i class="iconscroll"></i></span>
+            <span class="iconscroll-text"> Latest Trends <i class="iconscroll"></i></span>
+            <span class="iconscroll-text"> Artist <i class="iconscroll"></i></span>
+            <span class="iconscroll-text"> New Releases <i class="iconscroll"></i></span>
+        </div>
+        <div class="logos-slide">
+            <span class="iconscroll-text"> Podcasts <i class="iconscroll"></i></span>
+            <span class="iconscroll-text"> Playlists <i class="iconscroll"></i></span>
+            <span class="iconscroll-text"> Streams <i class="iconscroll"></i></span>
+            <span class="iconscroll-text"> Latest Trends <i class="iconscroll"></i></span>
+            <span class="iconscroll-text"> Artist <i class="iconscroll"></i></span>
+            <span class="iconscroll-text"> New Releases <i class="iconscroll"></i></span>
+        </div>
+    </div>
+    <h1 class="popular" id="popular-artist">Popular Artist</h1>
+    <div class="Singers">
+        <a href="./Popular Artist/1/1.html">
+            <div class="card i1">
+                <img src="./Singers/A. R. Rahman.png" height=600 alt="">
+                <div class="glass">
+                    <p class="singername">A. R. Rahman</p>
+                    <p class="artist">Artist</p>
+                </div>
+            </div>
+        </a>
+        <a href="./Popular Artist/2/1.html">
+            <div class="card i2">
+                <img src="./Singers/Yo Yo Honey Singh.png" height=360 alt="">
+                <div class="glass">
+                    <p class="singername">Honey Singh</p>
+                    <p class="artist">Artist</p>
+                </div>
+            </div>
+        </a>
+        <a href="./Popular Artist/3/1.html">
+            <div class="card i3">
+                <img src="./Singers/ArjithSingh.png" height=480 alt="">
+                <div class="glass">
+                    <p class="singername">Arjith Singh</p>
+                    <p class="artist">Artist</p>
+                </div>
+            </div>
+        </a>
+        <a href="./Popular Artist/4/1.html">
+            <div class="card i4">
+                <img src="./Singers/ShreyaGhoshal.png" height=400 alt="">
+                <div class="glass">
+                    <p class="singername">Shreya Ghoshal</p>
+                    <p class="artist">Artist</p>
+                </div>
+            </div>
+        </a>
+        <a href="./Popular Artist/5/1.html">
+            <div class="card i5">
+                <img src="./Singers/GajendraVerma.png" height="360" alt="">
+                <div class="glass">
+                    <p class="singername">Gajendra Verma</p>
+                    <p class="artist">Artist</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!-- Trending Songs -->
+
+    <h1 class="trend">Trending Songs</h1>
+    <div class="songLeft">
+        <a href="./Trending Songs/1/1.html">
+            <div class="songs song1">
+                <img src="./Singers/1727876654573.jpg" alt="Lana Del Rey">
+                <img src="./Figma Elements/beats.png" class="beat" alt="beats">
+                <div class="songname pos1">Summertime Sadness</div>
+                <div class="si">Lana Del Rey</div>
+            </div>
+        </a>
+        <a href="./Trending Songs/2/1.html">
+            <div class="songs song2">
+                <img src="./Singers/1727884953155.jpg" alt="Big Dawgs">
+                <img src="./Figma Elements/beats.png" class="beat" alt="beats">
+                <div class="songname pos2">Big Dawgs</div>
+                <div class="si">Hanumankind</div>
+            </div>
+        </a>
+
+        <a href="./Trending Songs/3/1.html">
+            <div class="songs song3">
+                <img src="./Singers/Coldplay.jpg" alt="Coldplay">
+                <img src="./Figma Elements/beats.png" class="beat" alt="beats">
+                <div class="songname pos3">Hymn For The Weekend</div>
+                <div class="si">Coldplay</div>
+            </div>
+        </a>
+        <a href="./Trending Songs/4/1.html">
+            <div class="songs song4">
+                <img src="./Singers/alan.jpg" alt="Alan Walker">
+                <img src="./Figma Elements/beats.png" class="beat" alt="beats">
+                <div class="songname pos4">Faded</div>
+                <div class="si">Alan Walker</div>
+            </div>
+        </a>
+        <a href="./Trending Songs/5/1.html">
+            <div class="songs song5">
+                <img src="./Singers/One Direction.jpg" alt="One Direction">
+                <img src="./Figma Elements/beats.png" class="beat" alt="beats">
+                <div class="songname pos5">Night Changes</div>
+                <div class="si">One Direction
+                </div>
+            </div>
+        </a>
+        <a href="./Trending Songs/6/1.html">
+            <div class="songs song6">
+                <img src="./Singers/Ed Sheeran.jpg" alt="Ed Sheeran">
+                <img src="./Figma Elements/beats.png" class="beat" alt="beats">
+                <div class="songname pos6">Perfect</div>
+                <div class="si">Ed Sheeran</div>
+        </a>
+    </div>
+    </div>
+
+
+
+
+    <div class="songRight">
+        <a href="./Trending Songs/1/1.html">
+            <div class="songr song1">
+                <img src="./Singers/1727876654573.jpg" alt="Lana Del Rey">
+                <img src="./Figma Elements/beats.png" class="beat" alt="beats">
+                <div class="songname pos1">Summertime Sadness</div>
+                <div class="si">Lana Del Rey</div>
+            </div>
+        </a>
+        <a href="./Trending Songs/2/1.html">
+            <div class="songr song2">
+                <img src="./Singers/1727884953155.jpg" alt="Big Dawgs">
+                <img src="./Figma Elements/beats.png" class="beat" alt="beats">
+                <div class="songname pos2">Big Dawgs</div>
+                <div class="si">Hanumankind</div>
+            </div>
+        </a>
+        <a href="./Trending Songs/3/1.html">
+            <div class="songr song3">
+                <img src="./Singers/Coldplay.jpg" alt="Coldplay">
+                <img src="./Figma Elements/beats.png" class="beat" alt="beats">
+                <div class="songname pos3">Hymn For The Weekend</div>
+                <div class="si">Coldplay</div>
+            </div>
+        </a>
+        <a href="./Trending Songs/4/1.html">
+            <div class="songr song4">
+                <img src="./Singers/alan.jpg" alt="Alan Walker">
+                <img src="./Figma Elements/beats.png" class="beat" alt="beats">
+                <div class="songname pos4">Faded</div>
+                <div class="si">Alan Walker</div>
+            </div>
+        </a>
+        <a href="./Trending Songs/5/1.html">
+            <div class="songr song5">
+                <img src="./Singers/One Direction.jpg" alt="One Direction">
+                <img src="./Figma Elements/beats.png" class="beat" alt="beats">
+                <div class="songname pos5">Night Changes</div>
+                <div class="si">One Direction
+                </div>
+            </div>
+        </a>
+        <a href="./Trending Songs/6/1.html">
+            <div class="songr song6">
+                <img src="./Singers/Ed Sheeran.jpg" alt="Ed Sheeran">
+                <img src="./Figma Elements/beats.png" class="beat" alt="beats">
+                <div class="songname pos6">Perfect</div>
+                <div class="si">Ed Sheeran</div>
+            </div>
+        </a>
+    </div>
+
+
+    <!-- Podcasts -->
+    <h1 class="podcast" id="podcast">Podcasts</h1>
+    <a href="./Podcast/1/podcast.html">
+        <div class="podcastContainer">
+            <div class="Pcard">
+                <img src="./Singers/Ranveer Allahbadia.png" alt="Lana Del Rey">
+                <div class="Pcontent">
+                    <h3>The Ranveer Show</h3>
+                    <p>Ranveer Allahbadia</p>
+                </div>
+            </div>
+
+            <div class="Pcard">
+                <img src="./Singers/Iman.jpg" alt="Alan Walker">
+                <div class="Pcontent">
+                    <h3>Iman Gadzhi</h3>
+                    <p>Iman Gadzhi</p>
+                </div>
+            </div>
+
+            <div class="Pcard">
+                <img src="./Singers/pod3.jpg" alt="Coldplay">
+                <div class="Pcontent">
+                    <h3>Alex Kime Podcasts</h3>
+                    <p>Alex Kime</p>
+                </div>
+            </div>
+
+            <div class="Pcard">
+                <img src="./Singers/Chris Williamson.jpg" alt="Alan Walker">
+                <div class="Pcontent">
+                    <h3>Modern Wisdom</h3>
+                    <p>Chris Williamson</p>
+                </div>
+            </div>
+            <div class="Pcard">
+                <img src="./Singers/Steven Cliff Bartlett.jpg" alt="One Direction">
+                <div class="Pcontent">
+                    <h3>The Diary of a CEO</h3>
+                    <p>Steven Bartlett</p>
+                </div>
+            </div>
+            <div class="Pcard">
+                <img src="./Singers/Luke belmar.jpg" alt="Ed Sheeran">
+                <div class="Pcontent">
+                    <h3>Datasets</h3>
+                    <p>Luke Belmar</p>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <div class="join">
+        <h1>Don't miss out – sign up now to unlock premium content and exclusive tracks</h1>
+        <button id="register" onclick="window.location.href='./register/register.html'">Register Now</button>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <img src="./Figma Elements/logo.png" alt="Your Logo">
+            </div>
+            <!-- Feedback Section -->
+            <div class="feedback">
+                <h3>Feedback</h3>
+                <form id="feedbackForm" action="#" onsubmit="return handleSubmit(event)">
+                    <textarea name="feedback" rows="4" placeholder="Let us know your thoughts" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="thankYouMessage" style="display:none; margin-top: 10px; color: rgb(0, 200, 255);">
+                    Thank you for your feedback!
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact" id="contact">
+                <h3>Contact Us</h3>
+                <p>Email: vibePulse@gmail.com</p>
+                <p>Phone: 8884602510</p>
+
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="ri-facebook-circle-line"></i></a>
+                    <a href="#"><i class="ri-twitter-x-line"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-linkedin-box-line"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <p style="text-align: center;  ">
+            &copy;Copyright 2024 Vibe Pulse. All rights reserved.
+        </p>
+    </footer>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            if (sidebar.style.display === 'flex') {
+                sidebar.style.display = 'none';
+            } else {
+                sidebar.style.display = 'flex';
+            }
+        }
+        function handleSubmit(event) {
+            event.preventDefault();
+            const feedbackForm = document.getElementById('feedbackForm');
+            document.getElementById('thankYouMessage').style.display = 'block';
+            feedbackForm.reset();
+        }
+    </script>
+    <script>
+        let isSpeaking = false; // Track whether the speech synthesis is currently active
+
+        function readTextAloud() {
+            if (isSpeaking) {
+                window.speechSynthesis.cancel(); // Stop any ongoing speech
+                isSpeaking = false; // Update the state to not speaking
+            } else {
+                const textElements = document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, span,a, button,span');
+                const utterance = new SpeechSynthesisUtterance();
+
+                // Combine text content of selected elements into a single string
+                utterance.text = Array.prototype.map.call(textElements, (element) => element.textContent).join(' ');
+                utterance.voice = window.speechSynthesis.getVoices()[0]; // Set the voice (default)
+                utterance.lang = 'en-US'; // Set language
+
+                // Event listener to update the speaking state when the speech starts or ends
+                utterance.onstart = function () {
+                    isSpeaking = true; // Update state to speaking
+                };
+
+                utterance.onend = function () {
+                    isSpeaking = false; // Update state to not speaking when finished
+                };
+
+                // Start speaking
+                window.speechSynthesis.speak(utterance);
+            }
+        }
+
+        // Event listener for the screen reader button
+        const screenReaderButton = document.getElementById('screen-reader-button');
+        screenReaderButton.addEventListener('click', readTextAloud);
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
