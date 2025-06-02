@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Navigation Menu</title>
+  <style>
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    nav {
+      background-color: #333;
+      padding: 1em;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1em;
+    }
+    li {
+      color: #fff;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    a:focus {
+      outline: 2px solid yellow;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation with ARIA roles -->
+  <nav aria-label="Main Navigation">
+    <ul role="menubar">
+      <li role="none"><a href="#home" role="menuitem">Home</a></li>
+      <li role="none"><a href="#about" role="menuitem">About Us</a></li>
+      <li role="none"><a href="#services" role="menuitem">Services</a></li>
+      <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>

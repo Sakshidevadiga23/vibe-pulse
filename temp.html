@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    } */
+
+    * {
+      margin: 0;
+    }
+
+    body {
+      background-color: #030712;
+    }
+
+    .songLeft {
+      margin-top: 2rem;
+      width: 90%;
+      max-width: 1536px;
+      margin-inline: auto;
+      height: 100px;
+      position: relative;
+      overflow: hidden;
+      mask-image: linear-gradient(to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 1) 20%,
+          rgba(0, 0, 0, 1) 80%,
+          rgba(0, 0, 0, 0));
+    }
+
+    @keyframes moveLeft {
+      to {
+        left: -200px;
+      }
+    }
+
+    .songs {
+      width: 240px;
+      height: 90px;
+      background: linear-gradient(to right, #0C375D, #210F4F);
+      border-radius: 6px;
+      position: absolute;
+      animation-timing-function: linear;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      border: 2px solid #0FB7F5;
+      left: max(calc(200px * 6), 100%);
+      animation-name: moveLeft;
+    }
+
+
+    .songname{
+      font-size: 20px;
+      color: white;
+      font-family: "Belfast";
+      position: absolute;
+      left: 80px;
+    }
+    
+    .song1 {
+      animation-delay: calc(30s / 6 * (6 - 1) * -1);
+    }
+
+    .song2 {
+      animation-delay: calc(30s / 6 * (6 - 2) * -1);
+    }
+
+    .song3 {
+      animation-delay: calc(30s / 6 * (6 - 3) * -1);
+    }
+
+    .song4 {
+      animation-delay: calc(30s / 6 * (6 - 4) * -1);
+    }
+
+    .song5 {
+      animation-delay: calc(30s / 6 * (6 - 5) * -1);
+    }
+
+    .song6 {
+      animation-delay: calc(30s / 6 * (6 - 6) * -1);
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="songLeft">
+    <div class="songs song1">
+      <img src="" alt="">
+      <div class="songname">A Thousand Years</div>
+    </div>
+    <div class="songs song2">
+      <img src="" alt="">
+      <div class="songname">A Thousand Years</div>
+    </div>
+    <div class="songs song3">
+      <img src="" alt="">
+      <div class="songname">A Thousand Years</div>
+    </div>
+    <div class="songs song4">
+      <img src="" alt="">
+      <div class="songname">A Thousand Years</div>
+    </div>
+    <div class="songs song5">
+      <img src="" alt="">
+      <div class="songname">A Thousand Years</div>
+    </div>
+    <div class="songs song6">
+      <img src="" alt="">
+      <div class="songname">A Thousand Years</div>
+    </div>
+  </div>
+
+</body>
+
+</html>
